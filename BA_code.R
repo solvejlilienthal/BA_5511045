@@ -10,6 +10,18 @@
 # - unique refers to the clonotype approach
 # - duplicate refers to the clones approach
 
+# - the donors in the code are numbered according to the experiment size and 
+#   therefore differ from the names given in the bachelor thesis
+# - donor 1 = donor 2 in code (experiment 2)
+# - donor 2 = donor 3 in code (experiment 3)
+# - donor 3 = donor 5 in code (experiment 5)
+# - donor 4 = donor 6 in code (experiment 6)
+# - donor 5 = donor 7 in code (experiment 7)
+# - donor 6 = donor 8 in code (experiment 8)
+# - donor 7 = donor 9 in code (experiment 9)
+# - donor 8 = donor 10 in code (experiment 10)
+
+
 # For protection of privacy purposes are the file names, donor sample ids and 
 # directory pathways anonymized.
 
