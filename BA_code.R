@@ -2,7 +2,7 @@
 
 # Bachelor thesis - R script
 # Script by Solvej Lilienthal
-# last edited: 19.11.2023
+# last edited: 01.12.2023
 
 ################################################################################
 ################################################################################
@@ -704,6 +704,13 @@ for (donorIndex in unique(mutationsDonor_filtered$donor)) {
   df_temp$donor = c(rep(donorIndex, 8))
   df_temp$randomized = c(rep("original", 4), rep("randomized", 4))
   df_temp$order = c(i, i+1, i+2, i+3, i, i+1, i+2, i+3)
+
+  # ATTENTION! BMPC and BMBmem/ BLBmem are switched, the right labels are:
+    # BMBmem == BMPC 
+    # BMBmem < BMPC
+    # BLBmem == BMPC
+    # BLBmem < BMPC 
+  # correspodning for the randomized labels
   df_temp$split = c("BMPC == BMBmem", "BMPC < BMBmem", "BMPC == BLBmem", "BMPC < BLBmem",
                     "r(BMPC == BMBmem)", "r(BMPC < BMBmem)", "r(BMPC == BLBmem)", "r(BMPC < BLBmem)")
   df_temp = df_temp[order(df_temp$order), ]
